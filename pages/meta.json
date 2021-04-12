@@ -1,7 +1,4 @@
 {
-  "index": "What is Nextra",
-  "features": "Features",
-  "advanced": "Advanced",
-  "docs": "Docs Theme",
-  "blog": "Blog Theme"
+  "index": "Inicio",
+  "auth": "Autentificacion"
 }
