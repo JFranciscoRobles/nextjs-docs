@@ -1,0 +1,8 @@
+{
+  "getusers": "GET Obtener Usuarios",
+  "deluser": "DELETE Eliminar Usuario",
+  "getmyprofile": "GET Informacion de Perfil",
+  "putprofiledata": "PUT Actualizar informacion de perfil",
+  "postprofilephoto": "POST Actualizar foto de perfil",
+  "postprofilebackgroundphoto": "POST Actualizar foto de fondo de perfil"
+}

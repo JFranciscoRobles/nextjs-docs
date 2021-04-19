@@ -1,0 +1,5 @@
+{
+  "getcategories": "GET Obtener categorias",
+  "postcategories": "POST Crear Categorias",
+  "delcategories": "DELETE Borrar Categoria"
+}

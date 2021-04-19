@@ -1,0 +1,82 @@
+# Ruta para actualizar la informacion de perfil de tu usuario.
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (PUT) (TOKEN)**
+
+https://damp-beyond-72658.herokuapp.com/usuario/update
+
+### Parametros de ejemplo:
+
+```
+{
+    "name": "Sailedqx",
+    "birth": "1997-12-12",
+    "email": "sailedgi@gmail.com",
+    "phone": "6645684580",
+    "address": "Mexico"
+}
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": "El usuario ha sido actualizado",
+    "extra": {
+        "id": 5,
+        "idGoogle": null,
+        "idFacebook": null,
+        "name": "Sailedqx",
+        "password": "$2b$10$hz91mkoXNWiCB7kvyrABnezlbARjGP9ZqvszyvaJHjIOttR5Sman.",
+        "picture": "ninguna",
+        "backgroundpicture": null,
+        "description": null,
+        "birth": "1997-12-12",
+        "email": "sailedgi@gmail.com",
+        "phone": "6645684580",
+        "address": "Mexico",
+        "isActivate": true,
+        "noConfirmation": 251320,
+        "isBlocked": false,
+        "isPublic": true,
+        "Roles_id": 4,
+        "createdAt": "2021-04-18T17:13:20.555Z",
+        "updatedAt": "2021-04-18T18:15:37.007Z"
+    }
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "El usuario no existe."
+}
+```
+
+```
+{
+    "code": 401,
+    "msg": "Acceso no autorizado"
+}
+```
+
+```
+{
+    "code": 500,
+    "msg": "Ha ocurrido un problema al decodificar el token"
+}
+```
+
+### Notas:
+
+1. Revisar bien el nombre de los parametros.
+2. Tambien sirve para actualizar el Rol de un usuario con Roles_id

@@ -1,0 +1,47 @@
+# Ruta para modificar una publicacion
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (PUT) (TOKEN) **
+
+https://damp-beyond-72658.herokuapp.com/post/:id
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/post/1
+
+{ "tile": "titulo modificado"}
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": "La publicacion ha sido actualizada"
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "No eres dueño de esta publicacion"
+}
+```
+
+```
+{
+    "code": 404,
+    "msg": "La publicacion no existe\"
+}
+```
+
+### Notas:

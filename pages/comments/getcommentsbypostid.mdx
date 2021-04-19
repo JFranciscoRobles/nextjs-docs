@@ -1,0 +1,45 @@
+# Ruta para obtener comentarios de una publicacion
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (GET)**
+
+https://damp-beyond-72658.herokuapp.com/commentsbypost/:idpost
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/commentsbypost/1
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": [
+        {
+            "id": 1,
+            "comment": "hola",
+            "Users_id": 1,
+            "Posts_id": 1,
+            "createdAt": "2021-04-19T14:53:55.036Z",
+            "updatedAt": "2021-04-19T14:53:55.036Z",
+            "User": {
+                "id": 1,
+                "name": "Sailed",
+                "picture": "ninguna"
+            }
+        }
+    ]
+}
+```
+
+#### Errores De Validación:
+
+### Notas:

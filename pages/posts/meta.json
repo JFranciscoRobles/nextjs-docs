@@ -1,0 +1,8 @@
+{
+  "getposts": "GET Obtener publicacions",
+  "getprofilepost": "GET Obtener publicaciones de tu perfil",
+  "postposts": "POST Crear Publicaciones",
+  "putposts": "PUT Modificar posts",
+  "getpostsid": "GET Informacion de una publicacion",
+  "delpost": "DELETE Eliminar publicacion"
+}

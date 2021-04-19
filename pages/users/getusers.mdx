@@ -1,0 +1,61 @@
+# Ruta para obtener lista de usuarios.
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (GET)**
+
+https://damp-beyond-72658.herokuapp.com/usuarios
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/usuarios
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": [
+        {
+            "id": 1,
+            "idGoogle": null,
+            "idFacebook": null,
+            "name": "Sailedq",
+            "password": "$2b$10$sTgqpmn2yPV7rmoRngW51ukGPLlPSa7HkiP8CJe4P..NByAPVUNq2",
+            "picture": "ninguna",
+            "backgroundpicture": null,
+            "description": null,
+            "birth": "1997-12-12",
+            "email": "sailed@gmail.com",
+            "phone": "6645684580",
+            "address": "Mexico",
+            "isActivate": null,
+            "noConfirmation": 227403,
+            "isBlocked": false,
+            "isPublic": true,
+            "Roles_id": 4,
+            "createdAt": "2021-04-18T15:01:58.770Z",
+            "updatedAt": "2021-04-18T15:01:58.770Z"
+        }]
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    code:404,
+    msg: "No hay usuarios en la base de datos"
+}
+```
+
+### Notas:
+
+1. Esta es una ruta de prueba y es posible que en un futuro se elimine o se modifique.

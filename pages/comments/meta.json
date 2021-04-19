@@ -1,0 +1,8 @@
+{
+  "getcomments": "GET Obtener comentarios",
+  "getcommentbyid": "GET Comentarios por id comentario",
+  "getcommentsbypostid": "GET Comentarios por post id",
+  "postcomment": "POST Crear comentario",
+  "putcomment": "PUT Actuaizar comentario",
+  "delcomment": "DEL Eliminar comentario"
+}

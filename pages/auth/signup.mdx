@@ -1,4 +1,83 @@
 # Ruta para registrarse
 
-`nextra-theme-docs` uses [Prism](https://prismjs.com) and [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer)
-to highlight the code blocks. This section covers how you can customze it.
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (POST)**
+
+https://damp-beyond-72658.herokuapp.com/signup
+
+### Parametros de ejemplo:
+
+```
+{
+
+  "name": "Sailedq",
+
+  "password": "o5wzwoqp",
+
+  "picture": "ninguna",
+
+  "birth": "1997-12-12",
+
+  "email": "sailedgod@gmail.com",
+
+  "phone": "6645684580",
+
+  "address": "Mexico"
+
+}
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+
+  "code": 200,
+
+  "msg": "Usuario creado con exito."
+
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+
+  "code": 500,
+
+  "msg": "Validation error: El nombre solo puede contener letras y no puede tener espacios en blanco."
+
+}
+```
+
+```
+{
+
+  "code": 500,
+
+  "msg": "Ese nombre ya esta en uso."
+
+}
+```
+
+```
+{
+
+  "code": 500,
+
+  "msg": "Este correo ya existe"
+
+}
+```
+
+### Notas:
+
+1. Cambio la forma de introducir la fecha.
+2. En caso de agregar un rol como de administrador, el parámetro se llama Roles_id, como se indica en la pagina de modelos.

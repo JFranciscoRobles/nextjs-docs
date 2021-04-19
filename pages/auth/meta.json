@@ -1,3 +1,7 @@
 {
-  "signup": "POST signup"
+  "signup": "POST Registrarse",
+  "verify": "POST Verificar Cuenta",
+  "signin": "POST Iniciar Sesión",
+  "recovery": "PUT Recuperar contraseña",
+  "changepassword": "PUT Cambiar contraseña"
 }

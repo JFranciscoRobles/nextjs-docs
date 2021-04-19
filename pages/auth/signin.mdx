@@ -1,0 +1,51 @@
+# Ruta para Iniciar Sesion
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (POST)**
+
+https://damp-beyond-72658.herokuapp.com/signin
+
+### Parametros de ejemplo:
+
+```
+{
+    "email":"sailedgi@gmail.com",
+    "password":"o5wzwoqp"
+}
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo0LCJlbWFpbCI6InNhaWxlZGdpQGdtYWlsLmNvbSJ9LCJpYXQiOjE2MTg3NTk3NzAsImV4cCI6MTYxODg0NjE3MH0.sfxB8wevIeUk4MtbSp3qMW7Le2JIIh2kz8M8h2AeZp0",
+    "rolID": 4
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 500,
+    "msg": "La conseña es incorrecta."
+}
+```
+
+```
+{
+    "code": 404,
+    "msg": "El usuario no existe o no es valido."
+}
+```
+
+### Notas:
+
+1. Verificar que estas recibiendo el rol.

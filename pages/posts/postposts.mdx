@@ -1,0 +1,54 @@
+# Ruta para crear una publicación.
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (POST) (TOKEN)**
+
+https://damp-beyond-72658.herokuapp.com/post
+
+### Parametros de ejemplo:
+
+```
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJlbWFpbCI6InNhaWxlZGdpQGdtYWlsLmNvbSJ9LCJpYXQiOjE2MTg4MDE4NDEsImV4cCI6MTYxODg4ODI0MX0.6G0-25na09CRbwOsv1FXr8qipfB3TYKBpzr7DCL4usY");
+
+var formdata = new FormData();
+formdata.append("title", "Prueba");
+formdata.append("description", "Esta es una prueba");
+formdata.append("latitude", "666");
+formdata.append("longitude", "-666");
+formdata.append("Categories_id", "1");
+formdata.append("image", fileInput.files[0], "/C:/Users/Saile/OneDrive/Imágenes/miniatura.png");
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: formdata,
+  redirect: 'follow'
+};
+
+fetch("localhost:8080/Post", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "message": "Publicacion creada con exito"
+}
+```
+
+#### Errores De Validación:
+
+### Notas:
+
+1.La publicacion ya pertenece a una categoria y si no se la ponen el default sera la primera.

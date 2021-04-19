@@ -1,0 +1,52 @@
+# Ruta para obtener la informacion de una publicación mediante su id
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (GET)**
+
+https://damp-beyond-72658.herokuapp.com/post/:idpost
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/post/1
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": {
+        "id": 1,
+        "title": "Prueba",
+        "description": "Esta es una prueba",
+        "thumbnail": "https://hackademy-red-social.s3.amazonaws.com/743e857d-9c99-4400-a9ea-3fc907b68f9e.png",
+        "video": "https://hackademy-red-social.s3.amazonaws.com/743e857d-9c99-4400-a9ea-3fc907b68f9e.png",
+        "latitude": "666",
+        "longitude": "-666",
+        "commentsCount": 0,
+        "reactionsCount": 0,
+        "Users_id": 1,
+        "Categories_id": 1,
+        "createdAt": "2021-04-19T03:11:46.671Z",
+        "updatedAt": "2021-04-19T03:11:46.671Z"
+    }
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "La publicacion no existe"
+}
+```
+
+### Notas:

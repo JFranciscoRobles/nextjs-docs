@@ -1,0 +1,44 @@
+# Ruta para obtener todas las reacciones de un usuario
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (GET) (TOKEN) (Paginacion)**
+
+https://damp-beyond-72658.herokuapp.com/reaccionsis
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/reaccionsis
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": {
+        "totalItems": 1,
+        "content": [
+            {
+                "id": 1,
+                "Posts_id": 1,
+                "Users_id": 1,
+                "createdAt": "2021-04-19T13:17:30.663Z",
+                "updatedAt": "2021-04-19T13:17:30.663Z"
+            }
+        ],
+        "totalPages": 1,
+        "currentPage": 0
+    }
+}
+```
+
+#### Errores De Validación:
+
+### Notas:

@@ -1,0 +1,38 @@
+# Ruta para obtener categorias
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (DELETE) (TOKEN)**
+
+https://damp-beyond-72658.herokuapp.com/categorias/:id
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/categorias/2
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": "Categoria creada exitosamente"
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "La categoria no existe."
+}
+```
+
+### Notas:

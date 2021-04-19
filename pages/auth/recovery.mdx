@@ -1,0 +1,42 @@
+# Ruta para Recuperar la contraseña.
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (Put)**
+
+https://damp-beyond-72658.herokuapp.com/account/recovery
+
+### Parametros de ejemplo:
+
+```
+{
+    "email": "sailedgi@gmail.com"
+}
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": "Contraseña Actualizada, favor de revisar el correo."
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "El usuario no existe."
+}
+```
+
+### Notas:
+
+1. Te llegara una contraseña aleatoria a tu correo.

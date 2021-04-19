@@ -1,0 +1,65 @@
+# Ruta para obtener publicaciones de tu perfil
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (GET) (TOKEN) (Paginacion)**
+
+https://damp-beyond-72658.herokuapp.com/myprofile/post
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/myprofile/post?page=0&size=1
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": {
+        "totalItems": 1,
+        "content": [
+            {
+                "idPost": 1,
+                "title": "Prueba modificada",
+                "description": "Esta es una prueba",
+                "thumbnail": "https://hackademy-red-social.s3.amazonaws.com/743e857d-9c99-4400-a9ea-3fc907b68f9e.png",
+                "video": "https://hackademy-red-social.s3.amazonaws.com/743e857d-9c99-4400-a9ea-3fc907b68f9e.png",
+                "createdAt": "2021-04-19T03:11:46.671Z",
+                "commentsCount": 0,
+                "reactionsCount": 2,
+                "Categories_id": 1,
+                "User": {
+                    "id": 1,
+                    "name": "Sailed",
+                    "picture": "ninguna"
+                },
+                "Reaction": {
+                    "like_by_user": 1
+                }
+            }
+        ],
+        "totalPages": 1,
+        "currentPage": 0
+    }
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "La publicacion no existe"
+}
+```
+
+### Notas:
+
+1.- like_by_user es una propiedad que se agrega para saber si el usuario ya reacciono a ese post.

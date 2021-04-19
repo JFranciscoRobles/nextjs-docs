@@ -1,4 +1,9 @@
 {
   "index": "Inicio",
-  "auth": "Autentificacion"
+  "auth": "Autentificacion",
+  "users": "Usuarios",
+  "categories": "Categorias",
+  "interface": "Interfaz",
+  "posts": "Publicaciones",
+  "reactions": "Reacciones"
 }

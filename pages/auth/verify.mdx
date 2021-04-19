@@ -1,0 +1,47 @@
+# Ruta para verificar la cuenta
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (POST)**
+
+https://damp-beyond-72658.herokuapp.com/verify/:verifyNumber
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/verify/436729
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": "Usuario Validado."
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 500,
+    "msg": "invalid input syntax for type integer: \"b\""
+}
+```
+
+```
+{
+    "code": 404,
+    "msg": "El usuario no existe."
+}
+```
+
+### Notas:
+
+1. El usuario no podra iniciar sesión si no esta verificado.

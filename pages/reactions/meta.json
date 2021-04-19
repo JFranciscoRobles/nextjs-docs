@@ -1,0 +1,7 @@
+{
+  "postreaccion": "POST Crear Reaccion",
+  "dereaccion": "DELETE Eliminar Reaccion",
+  "getreactions": "GET Reacciones",
+  "getreactionsbypost": "GET Reacciones de una publicacion",
+  "getreactionsbyuser": "GET Reacciones de un usuario"
+}

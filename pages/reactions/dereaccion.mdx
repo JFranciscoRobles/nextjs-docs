@@ -1,0 +1,38 @@
+# Ruta para borrar una reaccion.
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (POST) (TOKEN)**
+
+https://damp-beyond-72658.herokuapp.com/reaccion/:idpost
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/reaccion/1
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "message": "La Reaccion ha sido borrada"
+}
+```
+
+#### Errores De Validación:
+
+### Notas:
+
+```
+{
+    "code": 404,
+    "message": "No ha reaccionado a esta publicacion"
+}
+```

@@ -1,0 +1,40 @@
+# Ruta para borrar usuario.
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (DELETE)**
+
+https://damp-beyond-72658.herokuapp.com/usuarios/:idUser
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/usuarios/2
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": "El usuario ha sido eliminado"
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "El usuario no existe."
+}
+```
+
+### Notas:
+
+1. Esta es una ruta de prueba y es posible que en un futuro se elimine o se modifique.

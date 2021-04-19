@@ -1,0 +1,50 @@
+# Ruta para obtener categorias
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (GET)**
+
+https://damp-beyond-72658.herokuapp.com/categorias
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/categorias
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": [
+        {
+            "id": 1,
+            "name": "Tecnologia",
+            "picture": "Ninguno",
+            "description": "lorem ipsum ",
+            "createdAt": "2021-04-18T15:01:31.501Z",
+            "updatedAt": "2021-04-18T15:01:31.501Z"
+        },
+        {
+            "id": 2,
+            "name": "Musica",
+            "picture": "Ninguno",
+            "description": "lorem ipsum x2",
+            "createdAt": "2021-04-18T15:01:31.501Z",
+            "updatedAt": "2021-04-18T15:01:31.501Z"
+        }
+    ]
+}
+```
+
+#### Errores De Validación:
+
+### Notas:
+
+1. Categorias ya tienen el atributo picture.

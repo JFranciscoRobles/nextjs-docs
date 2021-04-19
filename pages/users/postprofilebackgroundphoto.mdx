@@ -1,0 +1,71 @@
+# Ruta para actualizar la foto de FONDO de perfil de un usuario.
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (POST) (TOKEN)**
+
+https://damp-beyond-72658.herokuapp.com/usuarios/profilebackgroundphoto
+
+### Parametros de ejemplo:
+
+```
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1LCJlbWFpbCI6InNhaWxlZGdpQGdtYWlsLmNvbSJ9LCJpYXQiOjE2MTg3Njk3MTksImV4cCI6MTYxODg1NjExOX0.JFdBKDL2AzddyQoSdY1iNnoiiz1_t-m0S1Y5tvnrc3I");
+
+var formdata = new FormData();
+formdata.append("image", fileInput.files[0], "/C:/Users/Saile/OneDrive/Imágenes/miniatura2.png");
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: formdata,
+  redirect: 'follow'
+};
+
+fetch("localhost:8080/usuarios/profilebackgroundphoto", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": "Imagen Subida con exito"
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "El usuario no existe."
+}
+```
+
+```
+{
+    "code": 401,
+    "msg": "Acceso no autorizado"
+}
+```
+
+```
+{
+    "code": 500,
+    "msg": "Ha ocurrido un problema al decodificar el token"
+}
+```
+
+### Notas:
+
+1. Este es un ejemplo de como usar fetch para subir la imagen

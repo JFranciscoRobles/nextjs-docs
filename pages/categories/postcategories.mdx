@@ -1,0 +1,50 @@
+# Ruta para crear una categoria
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (POST) (TOKEN)**
+
+https://damp-beyond-72658.herokuapp.com/categorias
+
+### Parametros de ejemplo:
+
+```
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1LCJlbWFpbCI6InNhaWxlZGdpQGdtYWlsLmNvbSJ9LCJpYXQiOjE2MTg3Njk3MTksImV4cCI6MTYxODg1NjExOX0.JFdBKDL2AzddyQoSdY1iNnoiiz1_t-m0S1Y5tvnrc3I");
+
+var formdata = new FormData();
+formdata.append("name", "Ciensologia");
+formdata.append("image", fileInput.files[0], "/C:/Users/Saile/OneDrive/Imágenes/tabla3lr.jpg");
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: formdata,
+  redirect: 'follow'
+};
+
+fetch("localhost:8080/categorias", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg": "Categoria creada exitosamente"
+}
+```
+
+#### Errores De Validación:
+
+### Notas:
+
+1. Categorias ya tienen el atributo picture.
