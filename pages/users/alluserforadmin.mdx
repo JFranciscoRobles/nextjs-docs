@@ -1,0 +1,50 @@
+
+# Ruta para mostrar usuarios especiales con el estado isBlocked true o false
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (Get)**
+
+https://damp-beyond-72658.herokuapp.com/allusers
+
+### parámetros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/alluseres ?roles=2&blocked=all
+https://damp-beyond-72658.herokuapp.com/allusers?roles=2&blocked=true
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "msg":  `El total de Usuarios especiales banneados es de : ${}`
+}
+``
+``
+{
+
+"code": 200,
+   ` El total de Usuarios Especiales es de  ${}`
+
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": 'No estas Autorizado'
+}
+```
+
+### Notas:
+
+1.	Esta es una ruta de prueba y es posible que en un futuro se elimine o se modifique.
