@@ -1,0 +1,38 @@
+# Ruta para borrar un comentario.
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (DELETE) (TOKEN)**
+
+https://damp-beyond-72658.herokuapp.com/follow/:id
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/follow/1
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "message": "Has dejado de seguir a este usuario"
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 500,
+    "message": "Ya sigues a este usuario"
+}
+```
+
+### Notas:
