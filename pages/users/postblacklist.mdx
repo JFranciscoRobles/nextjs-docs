@@ -1,0 +1,51 @@
+
+# Ruta Bloquear usuarios.
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (Post)(TOKEN)**
+
+https://damp-beyond-72658.herokuapp.com/blacklist/:id
+
+### parámetros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/blacklist/2
+
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{ code: 200, 
+msg: "El Usuario ha sido bloqueado" }
+
+``
+
+#### Errores De Validación:
+
+
+
+```
+{
+    500, "El usuario es el mismo"
+}
+```
+
+
+```
+{
+    505, "El Usuario ya está bloqueado"
+}
+```
+
+
+
+### Notas:
+
+1.	Esta es una ruta de prueba y es posible que en un futuro se elimine o se modifique.
