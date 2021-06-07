@@ -1,0 +1,82 @@
+# Ruta para registrarse
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (GET)**
+
+https://damp-beyond-72658.herokuapp.com/auth/fb
+
+### Parametros de ejemplo:
+
+
+### Respuestas
+
+#### Usario nuevo creado:
+```
+{
+  code:201,
+  msg:{
+        Usuario:"Usuario Creado Exitosamente",
+        Aviso:"Por favor ingrese el codigo que se la enviado",
+        Update:"Actualice sus datos"
+      }
+}
+```
+#### Usuario ya registrado
+```
+{
+  code:201,
+  msg:"Inicio de sesion exitoso",
+  token:token
+}
+```
+#### Éxito:
+
+```
+{
+
+  "code": 200,
+
+  "msg": "Usuario creado con exito."
+
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+
+  "code": 500,
+
+  "msg": "Validation error: El nombre solo puede contener letras y no puede tener espacios en blanco."
+
+}
+```
+
+```
+{
+
+  "code": 500,
+
+  "msg": "Ese nombre ya esta en uso."
+
+}
+```
+
+```
+{
+
+  "code": 500,
+
+  "msg": "Este correo ya existe"
+
+}
+```
+
+### Notas:
+1. Cambio la forma de introducir la fecha.
+2. En caso de agregar un rol como de administrador, el parámetro se llama Roles_id, como se indica en la pagina de modelos.

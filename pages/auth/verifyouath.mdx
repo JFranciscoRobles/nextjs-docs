@@ -1,0 +1,62 @@
+# Ruta para verificar la cuenta
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (POST)**
+
+https://damp-beyond-72658.herokuapp.com/gfb/verify
+
+### Parametros de ejemplo:
+
+```
+{
+	"code":185915,
+	"birth":"04/11/1999",
+	"phone":"664272738",
+	"address":"Tepoztlan"
+}
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+  code:201,
+  msg:"Actualizado y validado",
+  token:token
+}
+```
+
+#### Error:
+```
+{
+  code:501,
+  error: "Revise que los datos ingresados sean correctos",
+}
+```
+#### Errores De Validación:
+
+```
+{
+    "code": 500,
+    "msg": "invalid input syntax for type integer: \"b\""
+}
+```
+
+```
+{
+    "code": 404,
+    "msg": "El usuario no existe."
+}
+```
+
+### Notas:
+
+1. El usuario no podra iniciar sesión si no esta verificado.
+2. El momento que es validado, se le retorna su token 
+
