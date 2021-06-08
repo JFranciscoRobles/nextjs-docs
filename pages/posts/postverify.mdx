@@ -1,0 +1,46 @@
+# Ruta para veficicar una reporte de una publicacion
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (post) (TOKEN) **
+
+https://damp-beyond-72658.herokuapp.com/verifipost/:id
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/verifipost/1
+
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200:
+    "msg": "The report was updated"
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "The report could not be updated"
+}
+```
+```
+{
+    "code": 404,
+    "msg": "You are not authorized"
+}
+```
+
+
+### Notas:

@@ -1,0 +1,48 @@
+# Ruta para decidir si sigue o no la publicacion, ultimo paso para el reporte
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (post) (TOKEN) **
+
+https://damp-beyond-72658.herokuapp.com/circulatiopost/:id
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/circulatiopost/1
+
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200:
+    "msg": "1"
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "You are not authorized"
+}
+```
+
+```
+{
+    "code": 400,
+    "msg": "The report does not exist"
+}
+```
+
+
+### Notas:
+Por Body se debe aregar true o false, en donde true es que si va a continuar en circulacion y false se bloquea en definitiva.

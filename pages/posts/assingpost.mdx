@@ -1,0 +1,60 @@
+# Ruta para asignar el reporte
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (post) (TOKEN) **
+
+https://damp-beyond-72658.herokuapp.com/assingpost/:id
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/assingpost/1
+
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200:
+    "msg": "1"
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "User not found"
+}
+```
+```
+{
+    "code": 404,
+    "msg": "You are not authorized"
+}
+```
+```
+{
+    "code": 400,
+    "msg": "Unauthorized user"
+}
+```
+
+```
+{
+    "code": 400,
+    "msg": "The report does not exist"
+}
+```
+
+
+### Notas:
+Por Body se debe aregar el id del usuario al que se le va a asignar el reporte, este debe tener role 3

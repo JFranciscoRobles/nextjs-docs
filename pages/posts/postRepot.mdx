@@ -1,0 +1,46 @@
+# Ruta para reportar una publicacion
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (post) (TOKEN) **
+
+https://damp-beyond-72658.herokuapp.com/report/:id
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/report/1
+
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200:
+    "msg": 1
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 404,
+    "msg": "No eres dueño de esta publicacion"
+}
+```
+
+```
+{
+    "code": 404,
+    "msg": "Error"
+}
+```
+
+### Notas:
