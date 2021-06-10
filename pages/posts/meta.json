@@ -4,5 +4,6 @@
   "postposts": "POST Crear Publicaciones",
   "putposts": "PUT Modificar posts",
   "getpostsid": "GET Informacion de una publicacion",
-  "delpost": "DELETE Eliminar publicacion"
+  "delpost": "DELETE Eliminar publicacion",
+  "postview": "POST Crear vista a una publicacion"
 }

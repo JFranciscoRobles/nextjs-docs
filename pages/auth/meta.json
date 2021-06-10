@@ -3,5 +3,8 @@
   "verify": "POST Verificar Cuenta",
   "signin": "POST Iniciar Sesión",
   "recovery": "PUT Recuperar contraseña",
-  "changepassword": "PUT Cambiar contraseña"
+  "changepassword": "PUT Cambiar contraseña",
+  "authfb": "auth con FB",
+  "authg": "auth con Google",
+  "verifyouath": "verificar oauth"
 }

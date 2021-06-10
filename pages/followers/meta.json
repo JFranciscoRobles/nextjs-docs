@@ -1,0 +1,6 @@
+{
+  "delfollow": "DELETE Borrar follow",
+  "getallfollowers": "Get Ver todos los seguidores",
+  "gettotalfollower": "GET Cantidad de seguidores",
+  "postfollow": "POST Seguir a alguien"
+}

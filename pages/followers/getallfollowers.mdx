@@ -1,0 +1,38 @@
+# Ruta para obtener todos los followers de un usuario
+
+1. [Ruta](#ruta)
+2. [Parámetros de ejemplo](#parametros-de-ejemplo)
+3. [Respuestas](#respuestas)
+4. [Notas](#notas)
+
+### **Ruta: (GET) (TOKEN)**
+
+https://damp-beyond-72658.herokuapp.com/allfollowers/:id
+
+### Parametros de ejemplo:
+
+```
+https://damp-beyond-72658.herokuapp.com/allfollowers/1
+```
+
+### Respuestas
+
+#### Éxito:
+
+```
+{
+    "code": 200,
+    "message": "Lista de seguidores"
+}
+```
+
+#### Errores De Validación:
+
+```
+{
+    "code": 500,
+    "message": "No tiene seguidores"
+}
+```
+
+### Notas:
